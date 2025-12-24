@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Viewer</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding-top: 50px; }
+        h1 { color: #1c4587; }
+        #status { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>🎧 Audio Viewer</h1>
+    <p id="status">Connecting to broadcast...</p>
+
+    <audio id="remoteAudio" autoplay></audio>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="viewer.js"></script>
+</body>
+</html>

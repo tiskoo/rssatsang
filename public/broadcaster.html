@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Broadcaster</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding-top: 50px; }
+        h1 { color: #38761d; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; background-color: #6aa84f; color: white; border: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>🎤 Audio Broadcaster</h1>
+    <p id="status">Click "Start Broadcast" to request microphone access...</p>
+    <button id="startButton">Start Broadcast</button>
+
+    <audio id="localAudio" autoplay muted></audio>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="broadcaster.js"></script>
+</body>
+</html>
